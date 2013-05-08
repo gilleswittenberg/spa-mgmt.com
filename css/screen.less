@@ -15,6 +15,7 @@ h1, h2 {
 p, li {
 	color: @gray;
 	line-height: 1.4em;
+	font-size: 18px;
 }
 
 .dark-strip {
@@ -82,28 +83,24 @@ header {
 }
 
 // layout
-.wrapper {
-	width: 960px;
-	margin: 0px auto;
-	padding: 18px 0px 36px;
-}
-
-h1 {
-	font-size: 36px;
-}
 
 article {
+	width: 780px;
+	margin: 0 auto 36px;
+	background-color: @white;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px @gray;
+	padding-bottom: 48px;
 	h1 {
-		font-size: 17px;
-		margin-bottom: 24px;
-	}
-	p {
-		width: 640px;
-	}
-	.mark {
+		padding: 24px;
+		font-size: 32px;
 		font-style: italic;
-		margin-top: 36px;
-		font-size: 18px;
+		text-align: center;
+		border-bottom: solid 8px @blue;
+
+	}
+	p, ul {
+		margin: 48px 72px;
 	}
 	.email, .email a {
 		color: @blue;
