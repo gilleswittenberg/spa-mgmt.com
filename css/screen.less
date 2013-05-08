@@ -14,8 +14,8 @@ h1, h2 {
 
 p, li {
 	color: @gray;
-	line-height: 1.4em;
 	font-size: 18px;
+	line-height: 1.8em;
 }
 
 .dark-strip {
@@ -86,7 +86,7 @@ header {
 
 article {
 	width: 780px;
-	margin: 0 auto 36px;
+	margin: 0 auto 72px;
 	background-color: @white;
 	border-radius: 2px;
 	box-shadow: 0 1px 3px @gray;
@@ -107,5 +107,42 @@ article {
 		font-size: 17px;
 		font-weight: bold;
 		text-decoration: none;
+	}
+}
+
+// footer
+footer {
+	margin-top: 96px;
+	width: 100%;
+	background-color: @blue;
+	padding: 72px 0 72px * 2;
+	.footer-wrapper {
+		width: 600px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+	.footer-mark {
+		color: @white;
+		text-align: center;
+		font-size: 24px;
+		line-height: 48px;
+		font-style: italic;
+		margin-bottom: 72px * 2;
+	}
+	.footer-contactinformation {
+		width: 50%;
+	}
+	.footer-socialmedia {
+		float: right;
+	}
+	.footer-contactinformation, .footer-socialmedia {
+		p {
+			color :@white;
+			font-weight: normal;
+		}
+		a {
+			color: lighten(@blue, 50%);
+			text-decoration: none;
+		}
 	}
 }
