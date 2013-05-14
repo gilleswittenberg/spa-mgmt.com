@@ -10,9 +10,13 @@
 <link rel="stylesheet" href="css/screen.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="js/jquery.antispammailto.js"></script>
+<!--<script src="js/roundabout/jquery.roundabout.min.js"></script>-->
+<script src="js/colorbox/jquery.colorbox-min.js"></script>
 <script>
 $(function () {
 	$('#email').antispamMailto({localPart: 'info', domain: 'fishspa-management'});
+	//$('#slideshow ul').roundabout();
+	$('#slideshow a').colorbox({rel:'gal', current: false});
 });
 </script>
 </head>
@@ -21,7 +25,18 @@ $(function () {
 <h1>Spa Mgmt.</h1>
 <h2>Fish Spa Management&trade; Software</h2>
 </header>
-<div class="slideshow"></div>
+<div id="slideshow" class="slideshow">
+	<ul>
+		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-1.png"><img src="img/screenshots/284x_screenshot-1.png" width="284"></a></li>
+		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-2.png"><img src="img/screenshots/284x_screenshot-2.png" width="284"></a></li>
+		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-3.png"><img src="img/screenshots/284x_screenshot-3.png" width="284"></a></li>
+		<!--
+		<li><img src="img/screenshots/200x_screenshot-4.png" width="250"></li>
+		<li><img src="img/screenshots/200x_screenshot-5.png" width="250"></li>
+		<li><img src="img/screenshots/200x_screenshot-5.png" width="250"></li>
+		-->
+	</ul>
+</div>
 <div class="slideshow-text"><p>Specifically designed for the management of Garra Rufa Fish Spas globally</p></div>
 <div class="browsers">
 	<img src="img/browser-logos/all-desktop_600x.png">

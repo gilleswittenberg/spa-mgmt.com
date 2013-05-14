@@ -61,6 +61,27 @@ header {
 	background-image: url('img/slideshow-background_960x400.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: auto;
+	ul {
+		padding: 0;
+		width: 960px;
+		margin: 180px auto 0;
+		list-style: none;
+		li {
+			display: block;
+			float: left;
+			padding: 10px;
+			margin: 8px;
+			background-color: @white;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 1px 3px @gray;
+			border-radius: 2px;
+			img {
+				display: block;
+				padding: 0;
+			}
+		}
+	}
 }
 
 .slideshow-text {
@@ -146,3 +167,6 @@ footer {
 		}
 	}
 }
+
+// imports
+@import 'colorbox.less';
