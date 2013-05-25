@@ -1,0 +1,17 @@
+{
+	"name": "www-spa-mgmt-com",
+	"description": "Homepage www.spa-mgmt.com",
+	"repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.cakephp.org"
+        }
+    ],
+    "require": {
+        "pear-cakephp/cakephp": "2.3.3",
+        "gilleswittenberg/contact-form": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
+}
