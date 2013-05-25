@@ -1,62 +1,43 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
-<!DOCTYPE html>
-<html>
+<!Doctype html>
+<html lang="en">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+<meta charset="utf-8">
+<meta name="keywords" content="Fish Spa, Vis Spa, Garra Rufa, Management, Software, Computer System, CMS, Time">
+<meta name="description" content="Fish Spa Managagement Software">
+<meta name="copyright" content="2012">
+<meta name="robots" content="index, follow">
+<title>Spa mgmt. | Fish Spa Management&trade; software | Fish Spa, Vis Spa, Garra Rufa, Management, Software, Computer System, CMS, Time</title>
+<link rel="stylesheet" href="css/screen.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+<header>
+<h1>Spa Mgmt.</h1>
+<h2>Fish Spa Management&trade; Software</h2>
+</header>
+<?php echo $this->fetch('content'); ?>
+<footer>
+	<div class="footer-wrapper">
+		<p class="footer-mark">Fish Spa Management&trade; Software<br>is brought to you by an energetic team<br>focused on developing software to manage risks,<br>and provide solutions<br>for the global Fish Spa market</p>
+		<div class="footer-socialmedia">
+			<p><strong>Social Media</strong><br>
+				<a href="http://www.facebook.com">Facebook</a><br>
+				<a href="http://www.twitter.com">Twitter</a><br>
+				<a href="http://www.linked-in.com">Linked In</a><br>
+			</p>
 		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+		<div class="footer-contactinformation">
+			<p>
+				<strong>Spa mgmt.</strong><br>
+				Fish Spa Management&trade; Software<br>
+				Amsterdam, The Netherlands<br>
+				Addressstreet 123 B<br>
+				1234 AB, Amsterdam<br>
+				+31 (0) 6 98765432<br>
+				<a href="mailto:contact@spa-mgmt.com">contact@spa-mgmt.com</a>
+			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+</footer>
 </body>
 </html>
