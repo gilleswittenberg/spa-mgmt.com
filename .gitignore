@@ -2,3 +2,4 @@
 /tmp
 /Plugin
 /Vendor
+/Config/database.php
