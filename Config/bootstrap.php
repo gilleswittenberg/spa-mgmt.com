@@ -107,3 +107,29 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+CakePlugin::load('ContactForm', array('bootstrap' => true, 'routes' => true));
+Configure::write('ContactForm.fields', array(
+	'name' => array(
+		'label' => 'Your name'
+	),
+	'email' => array(
+		'label' => 'Your email'
+	),
+	'company_name' => array(
+		'label' => 'Company name'
+	),
+	'company_website' => array(
+		'label' => 'Company website'
+	),
+	'subject' => array(
+		'type' => 'hidden',
+		'value' => 'Applyment free trial'
+	),
+	'message' => array(
+		'label' => 'Questions / extra info',
+		'type' => 'textarea',
+	)
+));
+Configure::write('ContactForm.messageSuccess', 'Applyment send');
+Configure::write('ContactForm.messageFail', 'Applyment not send');
+Configure::write('ContactForm.includeJQuery', false);

@@ -12,7 +12,7 @@ h1, h2 {
 	color: @blue;
 }
 
-p, li {
+p, li, label {
 	color: @gray;
 	font-size: 18px;
 	line-height: 1.8em;
@@ -124,7 +124,7 @@ article {
 		border-bottom: solid 8px @blue;
 
 	}
-	p, ul {
+	p, ul, form {
 		margin: 48px 72px;
 	}
 	.email, .email a {
@@ -132,6 +132,50 @@ article {
 		font-size: 17px;
 		font-weight: bold;
 		text-decoration: none;
+	}
+}
+
+form {
+	label {
+		color: @blue;
+		font-style: italic;
+		font-weight: bold;
+		display: block;
+	}
+	.input input, textarea {
+		width: 636px - 24px - 6px;
+		margin-bottom: 24px;
+		padding: 12px;
+		font-size: 18px;
+		color: @gray;
+	}
+	.submit input {
+		background: @blue;
+		border: none;
+		border-top: solid 1px lighten(@blue, 20%);
+		border-bottom: solid 1px darken(@blue, 20%);
+		border-radius: 4px;
+		box-shadow: 0 1px 1px @gray;
+		color: @white;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px 36px;
+		cursor: pointer;
+		&:hover {
+			background: lighten(@blue, 2%);
+		}
+	}
+}
+
+.message {
+	border-radius: 4px;
+	color: @white;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 16px;
+	background-color: red;
+	&.success {
+		background-color: green;
 	}
 }
 

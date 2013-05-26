@@ -1,12 +1,12 @@
-<?php echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'); ?>
-<?php echo $this->Html->script('jquery.antispammailto.js'); ?>
-<?php echo $this->Html->script('colorbox/jquery.colorbox-min.js'); ?>
+<?php echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js', array('inline' => false)); ?>
+<?php echo $this->Html->script('jquery.antispammailto.js', array('inline' => false)); ?>
+<?php echo $this->Html->script('colorbox/jquery.colorbox-min.js', array('inline' => false)); ?>
 <?php echo $this->Html->scriptBlock("
 $(function () {
 	$('#email').antispamMailto({localPart: 'info', domain: 'fishspa-management'});
 	$('#slideshow a').colorbox({rel:'gal', current: false});
 });
-");
+", array('inline' => false));
 ?>
 <div id="slideshow" class="slideshow">
 	<ul>
@@ -51,9 +51,8 @@ $(function () {
 	</ul>
 </article>
 <article>
-	<h1>Free trial</h1>
-	<p>Fish Spa Management Software is available now, cost effective and easy to install, only an internet connected computer is required.<br><br>Please contact for more information:<br>
-	<span class="email" id="email">info [at] fishspa-management [dot] com</span>
-	</p>
+	<h1>Free monthly trial</h1>
+	<p>Fill in the form to apply for a free trial.</p>
+	<?php echo $this->Element('ContactForm.messages_add_form'); ?>
 </article>
 </div>

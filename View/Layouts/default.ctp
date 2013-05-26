@@ -8,7 +8,6 @@
 <meta name="robots" content="index, follow">
 <title>Spa mgmt. | Fish Spa Management&trade; software | Fish Spa, Vis Spa, Garra Rufa, Management, Software, Computer System, CMS, Time</title>
 <link rel="stylesheet" href="css/screen.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -34,10 +33,11 @@
 				Addressstreet 123 B<br>
 				1234 AB, Amsterdam<br>
 				+31 (0) 6 98765432<br>
-				<a href="mailto:contact@spa-mgmt.com">contact@spa-mgmt.com</a>
+				<a id="email" href="">contact [at] spa-mgmt [dot] com</a>
 			</p>
 		</div>
 	</div>
 </footer>
+<?php echo $this->fetch('script'); ?>
 </body>
 </html>
