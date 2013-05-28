@@ -41,5 +41,6 @@
 	</div>
 </footer>
 <?php echo $this->fetch('script'); ?>
+<?php echo $this->Element('google_analytics'); ?>
 </body>
 </html>
