@@ -1,0 +1,12 @@
+.git/
+.gitignore
+.gitmodules
+build/
+build.xml
+tmp/
+workfiles/
+.DS_Store
+._.DS_Store
+.*.swp
+README
+composer.lock

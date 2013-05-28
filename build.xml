@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project name="spa-mgmt.com" default="deploy">
+
+	<!--
+	Checks if working directory is clean
+	-->
+	<target name="check_git_working_directory">
+		<exec
+			command="git status | grep 'nothing to commit (working directory clean)'"
+			outputProperty="gitStatus"
+			/>
+		<if>
+			<equals arg1="${gitStatus}" arg2="nothing to commit (working directory clean)" />
+			<then>
+				<echo msg="Working directory Clean" />
+			</then>
+			<else>
+				<fail message="Working directory not clean!" />
+			</else>
+		</if>
+	</target>
+
+	<!--
+	Checks if current branch is named as specified by gitBranch property (master)
+	-->
+	<target name="check_git_branch" depends="check_git_working_directory">
+		<property name="gitBranch" value="cakephp" />
+		<exec
+			command="git branch --no-color | grep '*' | sed 's/^\*.//'"
+			outputProperty="gitBranchCli"
+			/>
+		<if>
+			<equals arg1="${gitBranchCli}" arg2="${gitBranch}" />
+			<then>
+				<echo msg="Git branch is ${gitBranch}" />
+			</then>
+			<else>
+				<fail message="Git branch is not ${gitBranch}!" />
+			</else>
+		</if>
+	</target>
+
+	<!--
+	Syncs all files including deletion of deleted files on the server
+	<target name="prod_deploy" depends="check_git_branch">
+	-->
+	<target name="prod_deploy">
+		<taskDef name="sync" classname="build.lib.Task.FileSyncTask" />
+		<sync
+			sourcedir="/Users/gilleswittenberg/Sites/spa-mgmt.com/"
+			destinationdir="spamgmt@spa-mgmt.com:public_html"
+			excludefile="sync.exclude"
+			delete="true"
+			verbose="true">
+		</sync>
+	</target>
+
+	<!--
+	Start of script
+	-->
+	<target name="deploy" depends="check_git_working_directory, check_git_branch, prod_deploy" />
+</project>
