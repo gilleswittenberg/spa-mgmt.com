@@ -5,6 +5,8 @@ build/
 build.xml
 tmp/
 workfiles/
+Config/database.php
+Config/core.php
 .DS_Store
 ._.DS_Store
 .*.swp
