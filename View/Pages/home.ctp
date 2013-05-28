@@ -10,14 +10,9 @@ $(function () {
 ?>
 <div id="slideshow" class="slideshow">
 	<ul>
-		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-1.png"><img src="img/screenshots/284x_screenshot-1.png" width="284"></a></li>
-		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-2.png"><img src="img/screenshots/284x_screenshot-2.png" width="284"></a></li>
-		<li><a rel="slideshow" href="img/screenshots/924xscreenshot-3.png"><img src="img/screenshots/284x_screenshot-3.png" width="284"></a></li>
-		<!--
-		<li><img src="img/screenshots/200x_screenshot-4.png" width="250"></li>
-		<li><img src="img/screenshots/200x_screenshot-5.png" width="250"></li>
-		<li><img src="img/screenshots/200x_screenshot-5.png" width="250"></li>
-		-->
+		<li><a rel="slideshow" href="img/screenshots/924x_screenshot-1.png"><img src="img/screenshots/284x_screenshot-1.png" width="284"></a></li>
+		<li><a rel="slideshow" href="img/screenshots/924x_screenshot-2.png"><img src="img/screenshots/284x_screenshot-2.png" width="284"></a></li>
+		<li><a rel="slideshow" href="img/screenshots/924x_screenshot-3.png"><img src="img/screenshots/284x_screenshot-3.png" width="284"></a></li>
 	</ul>
 </div>
 <div class="slideshow-text"><p>Specifically designed for the management of Garra Rufa Fish Spas globally</p></div>
