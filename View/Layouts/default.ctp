@@ -19,11 +19,13 @@
 	<div class="footer-wrapper">
 		<p class="footer-mark">Fish Spa Management&trade; Software<br>is brought to you by an energetic team<br>focused on developing software to manage risks,<br>and provide solutions<br>for the global Fish Spa market</p>
 		<div class="footer-socialmedia">
+			<!--
 			<p><strong>Social Media</strong><br>
 				<a href="http://www.facebook.com">Facebook</a><br>
 				<a href="http://www.twitter.com">Twitter</a><br>
 				<a href="http://www.linked-in.com">Linked In</a><br>
 			</p>
+			-->
 		</div>
 		<div class="footer-contactinformation">
 			<p>
