@@ -28,15 +28,15 @@ $(function () {
 <article>
 	<h1>Features</h1>
 	<ul>
-	<li>allocation of customer to specific fish spa tanks, hand or foot spa</li>
-	<li>health and safety compliance</li>
-	<li>customer time management efficiency - customers pay for time used after treatment</li>
-	<li>maintenance modules for water testing and routine maintenance reminders</li>
-	<li>online revenue tracking through secure internet address, including smart phone and tablet</li>
-	<li>customer base management, email distribution and newsletter options</li>
-	<li>gift card and promotion sales and tracking</li>
-	<li>group reservations, online reservation tool</li>
-	<li>multiple language options</li>
+	<li>Allocation of customer to specific fish spa tanks, hand or foot spa</li>
+	<li>Health and safety compliance</li>
+	<li>Customer time management efficiency - customers pay for time used after treatment</li>
+	<!--<li>Maintenance modules for water testing and routine maintenance reminders</li>-->
+	<li>Online revenue tracking, including smart phone and tablet</li>
+	<li>Customer base management, emailaddress collection for newsletters</li>
+	<li>Gift card and sales promotion tracking</li>
+	<li>Group reservations</li>
+	<!--<li>Multi language options</li>-->
 	<li>Accountancy management</li>
 	</ul>
 </article>

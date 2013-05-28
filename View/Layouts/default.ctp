@@ -30,9 +30,9 @@
 				<strong>Spa mgmt.</strong><br>
 				Fish Spa Management&trade; Software<br>
 				Amsterdam, The Netherlands<br>
-				Addressstreet 123 B<br>
-				1234 AB, Amsterdam<br>
-				+31 (0) 6 98765432<br>
+				Wingerdweg 107-I<br>
+				1032 AC, Amsterdam<br>
+				+31 (0) 6 25188765<br>
 				<a id="email" href="">contact [at] spa-mgmt [dot] com</a>
 			</p>
 		</div>
