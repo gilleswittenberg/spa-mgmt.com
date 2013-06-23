@@ -133,3 +133,4 @@ Configure::write('ContactForm.fields', array(
 Configure::write('ContactForm.messageSuccess', 'Applyment send');
 Configure::write('ContactForm.messageFail', 'Applyment not send');
 Configure::write('ContactForm.includeJQuery', false);
+Configure::write('ContactForm.mailTo', 'info@spa-mgmt.com');
