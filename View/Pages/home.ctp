@@ -3,7 +3,7 @@
 <?php echo $this->Html->script('colorbox/jquery.colorbox-min.js', array('inline' => false)); ?>
 <?php echo $this->Html->scriptBlock("
 $(function () {
-	$('#email').antispamMailto({localPart: 'info', domain: 'fishspa-management'});
+	$('#email').antispamMailto({localPart: 'contact', domain: 'spa-mgmt'});
 	$('#slideshow a').colorbox({rel:'gal', current: false});
 });
 ", array('inline' => false));
